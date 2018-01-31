@@ -1,0 +1,139 @@
+/* --- Layout -------------------------- */
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+}
+
+main {
+  margin: 100px 10% 10% 400px;
+}
+
+h1, h2, h3, h3, h4, h5, h6 {
+  font-weight: 100;
+  letter-spacing: 0.2px;
+}
+
+p { font-size: 18px; }
+
+a, a:visited {
+  text-decoration: none;
+  color: lightgray;
+}
+
+a:hover, a:active, a:focus, a.highlighted {
+  color: black;
+}
+
+/* --- Utilities -------------------------- */
+
+.italic { font-style: italic; }
+.center { display: block; text-align: center; }
+
+/* --- Main styles ------------------------- */
+
+.header-section {
+  margin-left: -300px;
+}
+
+.header-section h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.header-section h2 {
+  margin: 10px 0 100px;
+}
+
+header img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px dotted #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tab {
+  display: block;
+  padding-left: 50px;
+}
+
+.left-navigation {
+  position: fixed;
+  bottom: 50px;
+  left: 100px;
+  width: 200px;
+}
+
+.left-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.left-navigation ul li {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  padding: 10px 0;
+}
+
+section {
+  margin-top: 100px;
+  position: relative;
+}
+
+section::after {
+  content: "";
+  width: 400px;
+  height: 1px;
+  background-color: #eee;
+  position: absolute;
+  bottom: -50px;
+  left: calc(50% - 200px);
+}
+
+blockquote {
+  position: relative;
+}
+
+blockquote::before {
+  content: "";
+  top: 5px;
+  bottom: 5px;
+  left: -20px;
+  position: absolute;
+  width: 3px;
+  background-color: #eee;
+}
+
+/* Bibliography */
+
+.citation {
+  margin-bottom: 20px;
+}
+
+.citation .author {
+  font-size: 13px;
+}
+
+.citation .title.book {
+  font-style: italic;
+}
+
+.citation .printed {
+  font-size: 12px;
+  color: gray;
+}
+
+.citation .accessed {
+  font-size: 12px;
+  color: lightgray;
+}
