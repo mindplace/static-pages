@@ -1,0 +1,23 @@
+.left-navigation {
+  position: fixed;
+  bottom: 50px;
+  left: 100px;
+  width: 200px;
+}
+
+.left-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.left-navigation ul li {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  padding: 10px 0;
+}
+
+a.highlighted {
+  color: black !important;
+}

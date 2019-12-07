@@ -1,0 +1,28 @@
+section {
+  margin-top: 100px;
+  position: relative;
+}
+
+section::after {
+  content: "";
+  width: 400px;
+  height: 1px;
+  background-color: #eee;
+  position: absolute;
+  bottom: -50px;
+  left: calc(50% - 200px);
+}
+
+blockquote {
+  position: relative;
+}
+
+blockquote::before {
+  content: "";
+  top: 5px;
+  bottom: 5px;
+  left: -20px;
+  position: absolute;
+  width: 3px;
+  background-color: #eee;
+}
